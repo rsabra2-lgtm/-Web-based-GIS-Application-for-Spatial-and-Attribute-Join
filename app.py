@@ -51,7 +51,7 @@ def display_file_info(gdf, title):
         st.write("📍 معاينة سريعة:")
         m = folium.Map(location=[gdf.geometry.centroid.y.mean(), gdf.geometry.centroid.x.mean()], zoom_start=10)
         folium.GeoJson(gdf).add_to(m)
-        st_folium(m, width=700, height=400, use_container_width=True, returned_objects=[])
+        st_folium(m, width=700, height=500, key=title)
 
 # --- 3. واجهة المستخدم الرئيسية ---
 st.title(SETTINGS["TITLE"])
