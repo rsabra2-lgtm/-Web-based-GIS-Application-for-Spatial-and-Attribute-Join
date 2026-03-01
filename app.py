@@ -39,7 +39,7 @@ def load_data(uploaded_file):
         return None
 
 def display_file_info(gdf, title):
-    """عرض الخريطة والجدول لكل ملف (على نمط app6.py)"""
+    """عرض الخريطة والجدول لكل ملف"""
     st.subheader(title)
     col1, col2 = st.columns([1, 1])
     
