@@ -9,7 +9,7 @@ import os
 SETTINGS = {
     "MAIN_COLOR": "#2E7D32",
     "BG_COLOR": "#F0F2F6",
-    "TITLE": "🗺️ Web-based GIS Application for Spatial and Attribute Join"
+    "TITLE": "🗺️ Web-based GIS Application for Spatial and Attribute Join by Ramadan Sabra"
 }
 
 st.set_page_config(page_title=SETTINGS["TITLE"], layout="wide")
@@ -60,7 +60,7 @@ st.markdown("قم برفع ملفاتك الجغرافية لإجراء عملي
 # --- شريط التحكم (Sidebar) ---
 st.sidebar.header("📁 الخطوة 1: رفع الملفات")
 left_file = st.sidebar.file_uploader("رفع الملف الأساسي (Left) - ZIP", type=['zip'], key="left")
-right_file = st.sidebar.file_uploader("رفع الملف الثانوي (Right) - JSON/GeoJSON", type=["json", 'geojson'], key="right")
+right_file = st.sidebar.file_uploader("رفع الملف الثانوي (Right) - GeoJSON", type=["json", 'geojson'], key="right")
 
 # --- العرض الرئيسي للملفات ---
 if left_file:
